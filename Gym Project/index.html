@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes"/>
+    <title>IRON GYM PRO - Trung tâm Thể hình & Quản lý Cao cấp</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700;900&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+    
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+<div id="appRoot">
+    <!-- Phân hệ 1: Landing Page -->
+    <div id="landingContainer">
+        <header class="main-header">
+            <div class="logo"><i class="fas fa-dumbbell"></i> IRON GYM</div>
+            <nav class="nav-links">
+                <a href="#home">Trang Chủ</a>
+                <a href="#gallery">Không Gian</a>
+                <a href="#services">Dịch Vụ</a>
+                <a href="#pricing">Bảng Giá</a>
+                <a href="#contact">Liên Hệ</a>
+                <button class="nav-login-btn" id="navLoginBtn"><i class="fas fa-user-shield"></i> Hệ Thống Quản Lý</button>
+            </nav>
+        </header>
+
+        <section id="home" class="hero-section" style="background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.9)), url('https://images.unsplash.com/photo-1534438327276-14e5300c3a48?q=80&w=1920') no-repeat center center/cover;">
+            <div class="hero-content">
+                <h1>BỨT PHÁ <span class="text-stroke">GIỚI HẠN</span><br>KHẲNG ĐỊNH BẢN THÂN</h1>
+                <p>Hệ thống phòng tập đẳng cấp 5 sao với trang thiết bị hiện đại nhập khẩu, đội ngũ huấn luyện viên chuyên nghiệp chuẩn quốc tế sẵn sàng đồng hành cùng mục tiêu thay đổi vóc dáng của bạn.</p>
+                <div class="hero-buttons">
+                    <a href="#pricing" class="btn-main">Tham Gia Ngay</a>
+                    <a href="#gallery" class="btn-sub">Khám Phá Không Gian</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="gallery" class="landing-section">
+            <div class="section-title">
+                <h2>KHÔNG GIAN TẬP LUYỆN 4K</h2>
+                <p>Trải nghiệm môi trường thể hình chuyên nghiệp, tạo động lực bứt phá</p>
+            </div>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?q=80&w=600" alt="Khu tập tạ"/>
+                    <div class="gallery-overlay"><span>Khu Vực Tạ Nặng (Free Weights)</span></div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1540497077202-7c8a3999166f?q=80&w=600" alt="Máy tập hiện đại"/>
+                    <div class="gallery-overlay"><span>Hệ Thống Máy Cardio Cao Cấp</span></div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1517838277536-f5f99be501cd?q=80&w=600" alt="Khu tập Boxing"/>
+                    <div class="gallery-overlay"><span>Khu Vực Boxing & Giãn Cơ</span></div>
+                </div>
+            </div>
+        </section>
+
+        <section id="services" class="landing-section bg-darker">
+            <div class="section-title">
+                <h2>DỊCH VỤ ĐẲNG CẤP</h2>
+                <p>Những đặc quyền tối ưu dành riêng cho hội viên tại IRON GYM</p>
+            </div>
+            <div class="services-container">
+                <div class="service-card">
+                    <i class="fas fa-user-ninja"></i>
+                    <h3>Huấn Luyện Viên 1-1</h3>
+                    <p>Lộ trình tập luyện và chế độ dinh dưỡng cá nhân hóa được thiết kế riêng biệt bởi các PT giàu kinh nghiệm.</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-heartbeat"></i>
+                    <h3>InBody & Đo Chỉ Số</h3>
+                    <p>Quét và phân tích chi tiết lượng cơ, lượng mỡ, nước trong cơ thể định kỳ hàng tuần hoàn toàn miễn phí.</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-shower"></i>
+                    <h3>Tiện Ích Miễn Phí</h3>
+                    <p>Sử dụng không giới hạn tủ đồ thông minh locker, phòng tắm nóng lạnh, phòng xông hơi thảo dược sauna.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="pricing" class="landing-section">
+            <div class="section-title">
+                <h2>BẢNG GIÁ THÀNH VIÊN</h2>
+                <p>Lựa chọn gói tập phù hợp nhất với hành trình chinh phục hình thể của bạn</p>
+            </div>
+            <div class="pricing-container">
+                <div class="price-card">
+                    <div class="badge">Cơ Bản</div>
+                    <h3>GÓI KHỞI ĐẦU</h3>
+                    <div class="price">450.000đ<span>/Tháng</span></div>
+                    <ul>
+                        <li><i class="fas fa-check"></i> Tập luyện không giới hạn khung giờ</li>
+                        <li><i class="fas fa-check"></i> Miễn phí tủ đồ locker & tắm nóng lạnh</li>
+                        <li><i class="fas fa-check"></i> Đánh giá thể trạng InBody đầu vào</li>
+                        <li style="color:#555;"><i class="fas fa-times" style="color:#555;"></i> Không bao gồm khăn tập riêng</li>
+                    </ul>
+                    <button class="btn-buy">Đăng Ký Ngay</button>
+                </div>
+                <div class="price-card premium">
+                    <div class="badge-premium">Phổ Biến Nhất</div>
+                    <h3>GÓI VIP ELITE</h3>
+                    <div class="price">1.200.000đ<span>/3 Tháng</span></div>
+                    <ul>
+                        <li><i class="fas fa-check"></i> Toàn bộ đặc quyền của gói Cơ Bản</li>
+                        <li><i class="fas fa-check"></i> Sử dụng phòng xông hơi Sauna cao cấp</li>
+                        <li><i class="fas fa-check"></i> 3 buổi tập định hướng cùng Huấn luyện viên</li>
+                        <li><i class="fas fa-check"></i> Tặng bình nước thể thao IRON GYM</li>
+                    </ul>
+                    <button class="btn-buy">Đăng Ký Ngay</button>
+                </div>
+            </div>
+        </section>
+
+        <footer id="contact" class="landing-section bg-darker" style="padding-bottom: 30px;">
+            <div class="contact-wrapper">
+                <div class="section-title" style="margin-bottom: 40px;">
+                    <h2>LIÊN HỆ VỚI CHÚNG TÔI</h2>
+                    <p>Hãy để lại thông tin hoặc ghé thăm cơ sở để nhận ưu đãi trải nghiệm MIỄN PHÍ</p>
+                </div>
+                <div class="contact-info">
+                    <p><i class="fas fa-map-marker-alt"></i> Vị trí: Tòa nhà IRON, Quận Hà Đông, Hà Nội</p>
+                    <p><i class="fas fa-phone-alt"></i> Hotline tư vấn: 1900 6868</p>
+                    <p><i class="fas fa-envelope"></i> Email hỗ trợ: contact@irongympro.vn</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 IRON GYM PRO - Hệ thống phòng tập & quản lý thể hình cao cấp. All Rights Reserved.</p>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Phân hệ 2: Khu Vực Đăng Nhập / Đăng Ký -->
+    <div id="authContainer" class="auth-wrapper" style="display: none;">
+        <button class="back-to-home-btn" id="backToHomeBtn"><i class="fas fa-arrow-left"></i> Quay lại Trang Chủ</button>
+        
+        <!-- FORM ĐĂNG NHẬP -->
+        <div id="loginCard" class="glass-card">
+            <h2><i class="fas fa-dumbbell"></i> IRON GYM</h2>
+            <p style="margin-bottom: 1.5rem; color: #ccc;">Đăng nhập hệ thống quản lý PRO</p>
+            
+            <div class="input-field">
+                <label>Tên đăng nhập</label>
+                <input type="text" id="loginUser" placeholder="Nhập username..."/>
+            </div>
+            <div class="input-field">
+                <label>Mật khẩu</label>
+                <input type="password" id="loginPass" placeholder="Nhập mật khẩu..."/>
+            </div>
+            <button class="auth-btn" id="loginBtn">Đăng Nhập</button>
+            
+            <div class="switch-auth">
+                Chưa có tài khoản? <a href="#" id="toRegister">Đăng ký ngay</a>
+            </div>
+
+            <!-- PHẦN ĐĂNG NHẬP NHANH CHO TÀI KHOẢN ADMIN -->
+            <div class="admin-quick-login">
+                <div class="admin-divider"><span>HOẶC TRUY CẬP ADMIN</span></div>
+                <button class="admin-btn" id="adminQuickBtn">
+                    <i class="fas fa-user-shield"></i> Đăng nhập bằng tài khoản Admin
+                </button>
+            </div>
+        </div>
+
+        <!-- FORM ĐĂNG KÝ -->
+        <div id="registerCard" class="glass-card" style="display: none;">
+            <h2><i class="fas fa-user-plus"></i> ĐĂNG KÝ</h2>
+            <p style="margin-bottom: 1.5rem; color: #ccc;">Tạo tài khoản nhân viên / PT mới</p>
+            
+            <div class="input-field">
+                <label>Tên tài khoản (Username)</label>
+                <input type="text" id="regUser" placeholder="Tên đăng nhập mới..."/>
+            </div>
+            <div class="input-field">
+                <label>Địa chỉ Email</label>
+                <input type="email" id="regEmail" placeholder="example@gym.com..."/>
+            </div>
+            <div class="input-field">
+                <label>Mật khẩu</label>
+                <input type="password" id="regPass" placeholder="Tạo mật khẩu an toàn..."/>
+            </div>
+            <button class="auth-btn" id="registerBtn">Đăng Ký Tài Khoản</button>
+            
+            <div class="switch-auth">
+                Đã có tài khoản rồi? <a href="#" id="toLogin">Đăng nhập</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Phân hệ 3: Dashboard nội bộ -->
+    <div id="dashboardContainer" class="app-layout" style="display: none;">
+        <div class="sidebar">
+            <div class="brand"><i class="fas fa-dumbbell"></i> IRON GYM PRO</div>
+            <div class="nav-menu">
+                <div class="nav-item active" data-view="dashboard"><i class="fas fa-cubes"></i><span>Tổng quan</span></div>
+                <div class="nav-item" data-view="members"><i class="fas fa-users"></i><span>Quản lý hội viên</span></div>
+                <div class="nav-item" data-view="packages"><i class="fas fa-tag"></i><span>Gói tập</span></div>
+                <div class="nav-item" data-view="trainers"><i class="fas fa-chalkboard-user"></i><span>Huấn luyện viên</span></div>
+                <div class="nav-item" data-view="subscriptions"><i class="fas fa-id-card"></i><span>Đăng ký gói</span></div>
+                <div class="nav-item" data-view="checkins"><i class="fas fa-fist-raised"></i><span>Check-in</span></div>
+                <div class="nav-item" data-view="stats"><i class="fas fa-chart-pie"></i><span>Thống kê</span></div>
+                <div class="nav-item" data-view="about"><i class="fas fa-info-circle"></i><span>Giới thiệu</span></div>
+                
+                <div class="nav-item" id="adminPanelNav" data-view="admin" style="display: none;"><i class="fas fa-user-shield"></i><span>Admin Panel</span></div>
+                <div class="nav-item" id="logoutSide"><i class="fas fa-sign-out-alt"></i><span>Thoát hệ thống</span></div>
+            </div>
+        </div>
+        
+        <div class="main-panel">
+            <div class="top-header">
+                <div class="page-title" id="dynamicTitle">IRON DASH</div>
+                <button class="logout-btn" id="logoutTop"><i class="fas fa-lock-open"></i> Đăng xuất</button>
+            </div>
+            <div id="viewContent" class="fade-up"></div>
+        </div>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
